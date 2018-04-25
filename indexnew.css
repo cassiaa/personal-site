@@ -1,0 +1,85 @@
+/* global stuff */
+
+.container {
+    height: 100vh;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+body {
+    font-family: 'Lato', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+}
+
+/* first enter page */
+
+#first {
+    background-color: #4cc0ff;
+    position: relative;
+}
+
+#enter {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    transform: translate(-100px, -50px);
+}
+
+/* second page w columns -- column layout sizing*/
+
+#secondcontainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#innerleft {
+    width: 33%;
+    height: 100vh;
+    float: left;
+    background-color: #ffe900;
+}
+
+#innerright {
+    width: 67%;
+    height: 100vh;
+    float: left;
+    position: relative;
+    background-color: #07d600;
+}
+
+@media screen and (max-width: 600px) {
+    #innerleft {
+        width: 100%;
+        height: 30vh;
+    }
+    #innerright{ 
+        width: 100%;
+        height: 70vh;
+    }
+}
+
+/* second page actual page content */
+
+#dialog {
+    width: 75%;
+    height: 200px;
+    transform: translate(-50%, -100px);
+    background-color: #ff93d5;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #dialog {
+        width: 100%;
+    }
+}
+
+/* third screen */
+#third {
+    background-color: #ffb600;
+}
+
