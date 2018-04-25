@@ -51,16 +51,7 @@ body {
     background-color: #07d600;
 }
 
-@media screen and (max-width: 600px) {
-    #innerleft {
-        width: 100%;
-        height: 30vh;
-    }
-    #innerright{ 
-        width: 100%;
-        height: 70vh;
-    }
-}
+
 
 /* second page actual page content */
 
@@ -72,14 +63,28 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    #dialog {
-        width: 100%;
-    }
-}
+
 
 /* third screen */
 #third {
     background-color: #ffb600;
 }
 
+
+@media screen and (max-width: 900px) {
+    #innerleft {
+        width: 100%;
+        height: 30vh;
+    }
+    #innerright{ 
+        width: 100%;
+        height: 70vh;
+    }
+    #dialog {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+}
