@@ -75,6 +75,12 @@ img#logo {
 
 /* responsive styling -- works on anything less than 991 pixels? */
 @media screen and (max-width: 991px) {
+    #enter {
+        width: 100%;
+    }
+    #logo {
+        width: 100%;
+    }
     #innerleft {
         width: 100%;
         height: 30vh;
