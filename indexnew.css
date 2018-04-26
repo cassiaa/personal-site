@@ -24,11 +24,28 @@ body {
 #enter {
     width: 500px;
     height: auto;
+    background: lavender;
     transform: translate(-250px, -50px);
 }
 
 img#logo {
     width: inherit;
+}
+
+img#logo:hover {
+    cursor: pointer;
+}
+
+#underline {
+    width: 0px;
+    height: 2px;
+    background:white;
+    transition: width 1s ease;
+    transform: translate(-250px, 20px);
+}
+
+img#logo:hover + #underline {
+    width: 500px;
 }
 
 /* second page w columns -- column layout sizing*/
@@ -77,9 +94,9 @@ img#logo {
 @media screen and (max-width: 991px) {
     #enter {
         width: 100%;
-    }
-    #logo {
-        width: 100%;
+        transform: translate(0px, 0px);
+        position: absolute;
+        left: 0%;
     }
     #innerleft {
         width: 100%;
